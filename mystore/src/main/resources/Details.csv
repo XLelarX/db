@@ -1,0 +1,13 @@
+123;321;asdaf
+121;211;fghf
+924;541;fghjghjaf
+
+create table cars
+(
+  id   integer not null
+    constraint cars_pk
+      primary key,
+  name text,
+  date timestamp,
+  cost double precision
+);
