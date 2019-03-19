@@ -51,24 +51,19 @@ public class MouseInput implements MouseListener {
 
     @Override
     public void mouseMoved(MouseEvent e) {
-        x = e.getX();
-        y = e.getY();
+         y = e.getY();
     }
 
     @Override
     public void mouseDragged(MouseEvent e) {//&& y < e.getY()
-        System.out.println(e.getX() + "/" + e.getY());
+       // System.out.println(e.getX() + "/" + e.getY());
 
-//        if (y > e.getY()) {
-//            Rendering.alpha += 0.001 * (e.getY() - y);
-//            Rendering.x = 0;
-//            Rendering.y = 1;
-//        } else
-//        if (y < e.getY()) {
-//            Rendering.alpha += 0.001 * (e.getY() - y);
-//            Rendering.x = 0;
-//            Rendering.y = 1;
-//        }
+        if (y > e.getY()) {
+            Rendering.beta += 0.001 * (e.getY() - y);
+        } else
+        if (y < e.getY()) {
+            Rendering.beta -= 0.001 * (e.getY() - y);
+        }
 //
 //        if (x > e.getX()) {
 //            Rendering.alpha += 0.001 * (e.getX() - x);
@@ -81,27 +76,27 @@ public class MouseInput implements MouseListener {
 //            Rendering.x = 1;
 //        }
 
-        if (x > e.getX() && y > e.getY()) {
-            Rendering.alpha += 0.001 * (e.getX() - x);
-            Rendering.x = 1;
-            Rendering.y = 1;
-        }
-        else if (x < e.getX() && y < e.getY()) {
-            Rendering.alpha +=  0.001 * (e.getX() - x);
-            Rendering.x = 1;
-            Rendering.y = 1;
-        }
-        else
-            if (x < e.getX() && y > e.getY()) {
-            Rendering.alpha +=  0.001 * (e.getX() - x);
-            Rendering.x = -1;
-            Rendering.y = 1;
-        }
-        else if (x > e.getX() && y < e.getY()) {
-            Rendering.alpha +=  0.001 * (e.getX() - y);
-            Rendering.x = 1;
-            Rendering.y = -1;
-        }
+//        if (x > e.getX() && y > e.getY()) {
+//            Rendering.alpha += 0.001 * (e.getX() - x);
+//            Rendering.x = 1;
+//            Rendering.y = 1;
+//        }
+//        else if (x < e.getX() && y < e.getY()) {
+//            Rendering.alpha +=  0.001 * (e.getX() - x);
+//            Rendering.x = 1;
+//            Rendering.y = 1;
+//        }
+//        else
+//            if (x < e.getX() && y > e.getY()) {
+//            Rendering.alpha +=  0.001 * (e.getX() - x);
+//            Rendering.x = -1;
+//            Rendering.y = 1;
+//        }
+//        else if (x > e.getX() && y < e.getY()) {
+//            Rendering.alpha +=  0.001 * (e.getX() - y);
+//            Rendering.x = 1;
+//            Rendering.y = -1;
+//        }
 
         //alpha =
         //System.out.println(e.getX() + "/" + e.getY());

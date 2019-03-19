@@ -1,10 +1,10 @@
 package lelar.graphics;
 
+import com.jogamp.nativewindow.WindowClosingProtocol;
 import com.jogamp.newt.opengl.GLWindow;
 import com.jogamp.opengl.GLCapabilities;
 import com.jogamp.opengl.GLProfile;
 import com.jogamp.opengl.util.FPSAnimator;
-
 public class TR {
 
 
@@ -23,13 +23,13 @@ public class TR {
         window.addGLEventListener(new Rendering());
 
         window.addMouseListener(new MouseInput());
-        window.addMouseListener(new MouseInput());
+        window.addKeyListener(new KeyboardInput());
 
-        //window.setDefaultCloseOperation(WindowClosingProtocol.WindowClosingMode.DISPOSE_ON_CLOSE);
-
+        window.setDefaultCloseOperation(WindowClosingProtocol.WindowClosingMode.DISPOSE_ON_CLOSE);
 
 
         final FPSAnimator animator = new FPSAnimator(window, 60);
+
         animator.start();
 
 
