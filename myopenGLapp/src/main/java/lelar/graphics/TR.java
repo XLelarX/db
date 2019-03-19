@@ -5,13 +5,12 @@ import com.jogamp.newt.opengl.GLWindow;
 import com.jogamp.opengl.GLCapabilities;
 import com.jogamp.opengl.GLProfile;
 import com.jogamp.opengl.util.FPSAnimator;
+
 public class TR {
+    private static int width = 640;
+    private static int height = 480;
 
-
-    public static int width = 640;
-    public static int height = 480;
-
-    public static GLWindow window;
+    private static GLWindow window;
 
     public static void main(String... args) {
         GLProfile glProfile = GLProfile.get(GLProfile.GL2);

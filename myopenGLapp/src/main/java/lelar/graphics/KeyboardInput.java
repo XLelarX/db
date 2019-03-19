@@ -24,8 +24,5 @@ public class KeyboardInput implements KeyListener {
 
     @Override
     public void keyReleased(KeyEvent e) {
-        // if (e.getKeyCode() == KeyEvent.VK_A || e.getKeyCode() == KeyEvent.VK_D)
-        // Rendering.y = 0;
-
     }
 }

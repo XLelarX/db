@@ -8,28 +8,13 @@ public class MouseInput implements MouseListener {
     private static int x;
     private static int y;
 
-    private static int alpha;
-
-    public static int getX() {
-        return x;
-    }
-
-    public static int getY() {
-        return y;
-    }
-
-    public static int getAlpha() {
-        return alpha;
-    }
 
     @Override
     public void mouseClicked(MouseEvent mouseEvent) {
-        //System.out.println("mouseClicked");
     }
 
     @Override
     public void mouseEntered(MouseEvent mouseEvent) {
-        // System.out.println("mouseEntered");
     }
 
     @Override
@@ -44,24 +29,20 @@ public class MouseInput implements MouseListener {
 
     @Override
     public void mouseReleased(MouseEvent mouseEvent) {
-        //Rendering.y = 0;
-        // Rendering.x = 0;
-
     }
 
     @Override
     public void mouseMoved(MouseEvent e) {
-         y = e.getY();
+        x = e.getX();
+        y = e.getY();
     }
 
     @Override
-    public void mouseDragged(MouseEvent e) {//&& y < e.getY()
-       // System.out.println(e.getX() + "/" + e.getY());
+    public void mouseDragged(MouseEvent e) {
 
         if (y > e.getY()) {
             Rendering.beta += 0.001 * (e.getY() - y);
-        } else
-        if (y < e.getY()) {
+        } else if (y < e.getY()) {
             Rendering.beta -= 0.001 * (e.getY() - y);
         }
 //
