@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="arcball">
+  <library name="gdx-jnigen">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/main/resources/arcball.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../jglfw-master/jglfw/libs/gdx-jnigen.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

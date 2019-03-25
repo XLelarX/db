@@ -30,6 +30,14 @@
             <version>3.1.0</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.badlogicgames.jglfw/jglfw -->
+        <dependency>
+            <groupId>com.badlogicgames.jglfw</groupId>
+            <artifactId>jglfw</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+
 
     </dependencies>
     <build>
