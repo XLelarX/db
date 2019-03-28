@@ -7,7 +7,7 @@
 
 
     <persistence-unit name="postgres" transaction-type="RESOURCE_LOCAL">
-        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <properties>
             <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
