@@ -1,34 +1,66 @@
 package com.lelar.tables;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
 @Table(name = "clients")
 
 public class Client {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    // @Column(name = "id", updatable = false)
+    @Column(name = "id")
     private long id;
 
-    @Column(name = "fullname")
-    private String fullName;
-
-    public Client(String fullName) {
-        this.fullName = fullName;
-    }
+    @Column(name = "name")
+    private String name;
+    @Column(name = "surname")
+    private String surname;
+    @Column(name = "patronymic")
+    private String patronymic;
 
     public Client() {
     }
 
-    public String getFullName() {
-        return fullName;
+    public long getId() {
+        return id;
     }
 
-    public void setFullName(String fullname) {
-        this.fullName = fullname;
+    public void setId(long id) {
+        this.id = id;
     }
 
-   // @OneToOne(optional = true, cascade = CascadeType.ALL)
-   // private Basket basket;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String fullname) {
+        this.name = fullname;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getPatronymic() {
+        return patronymic;
+    }
+
+    public void setPatronymic(String patronymic) {
+        this.patronymic = patronymic;
+    }
+
+    @OneToMany(mappedBy = "clientId", fetch = FetchType.LAZY)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    private Collection<Basket> basket;
+
+    @OneToMany(mappedBy = "clientId", fetch = FetchType.LAZY)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    private Collection<Order> orders;
 }

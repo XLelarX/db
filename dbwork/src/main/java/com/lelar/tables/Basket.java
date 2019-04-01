@@ -1,19 +1,34 @@
 package com.lelar.tables;
 
+import com.lelar.services.Service;
+
 import javax.persistence.*;
 
 @Entity
-@Table(name = "basket")
-
+@Table(name = "baskets")
+@IdClass(BasketRow.class)
 
 public class Basket {
     @Id
+    @ManyToOne(cascade = CascadeType.REMOVE)
+    @JoinColumn(name = "clientId")
+    private Client clientId;
 
-    //@GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    @Id
+    @ManyToOne(cascade = CascadeType.REMOVE)
+    @JoinColumn(name = "productId")
+    private Product productId;
 
-    //@OneToOne(optional = true, mappedBy = "id")
-    // @Column(name = "id", updatable = false)
+    public void setProductId(long productId) {
+        Service<Product> sp = new Service<Product>(Product.class);
+        this.productId = sp.getId(productId);
+        sp.end();
+    }
 
-    //private Client clientId;
+    public void setClientId(long clientId) {
+        Service<Client> sc = new Service<Client>(Client.class);
+        this.clientId = sc.getId(clientId);
+        sc.end();
+    }
+
 }

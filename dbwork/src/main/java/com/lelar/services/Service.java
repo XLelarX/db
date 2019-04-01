@@ -1,17 +1,28 @@
 package com.lelar.services;
 
-import com.lelar.tables.Client;
-
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 
-public class ClientService {
+public class Service<T> {
     private EntityManager em = Persistence.createEntityManagerFactory("postgres").createEntityManager();
 
-    public void add(Client client) {
+    private Class<T> type;
+
+    public Service(Class<T> type) {
+        this.type = type;
+    }
+
+    public void add(T t) {
         em.getTransaction().begin();
-        em.merge(client);
+        em.merge(t);
         em.getTransaction().commit();
+    }
+
+    public T getId(long id) {
+        em.getTransaction().begin();
+        T t = get(id);
+        em.getTransaction().commit();
+        return t;
     }
 
     public void delete(long id) {
@@ -20,23 +31,15 @@ public class ClientService {
         em.getTransaction().commit();
     }
 
-    public Client get(long id) {
-        return em.find(Client.class, id);
+    private T get(long id) {
+        return em.find(type, id);
     }
 
-    public void update(Client details) {
+    public void update(T t) {
         em.getTransaction().begin();
-        em.merge(details);
+        em.merge(t);
         em.getTransaction().commit();
     }
-
-
-    public void clear() {
-        em.getTransaction().begin();
-        em.createQuery("DELETE FROM clients");
-        em.getTransaction().commit();
-    }
-
 
     public void end() {
         em.close();

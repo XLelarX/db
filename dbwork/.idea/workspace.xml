@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e12403b-5a0a-4da2-b3f6-8bf27a0c38e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/TableManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/TableReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/TablesManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/services/BasketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/services/CategoriesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/services/ClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/services/DetailsSevice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Basket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Categories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Details.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/services/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/BasketRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/ParametersRow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Price.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine.UyQzAA/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine.UyQzAA/schema/information_schema.FNRwLQ.meta" afterDir="false" />
@@ -24,36 +16,43 @@
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine.UyQzAA/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine.UyQzAA/schema/pg_toast.33HYYw.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine.UyQzAA/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine.UyQzAA/schema/pg_toast_temp_1.5ixBaA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine.UyQzAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine.UyQzAA/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine2.P2YxBg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine2.P2YxBg/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine2.P2YxBg/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine2.P2YxBg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine2.P2YxBg/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine2.P2YxBg/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine2.P2YxBg/schema/pg_toast.33HYYw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine2.P2YxBg/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/mine2.P2YxBg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_temp_1.zkWuFg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_toast.33HYYw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_toast_temp_1.5ixBaA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2adfc519-fd1f-47f2-805a-bad2c267017f/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/CarService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lelar/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/CarService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/TablesManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lelar/TablesManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/services/BasketService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/services/CategoriesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/services/ClientService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/services/DetailsSevice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/services/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Basket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Categories.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Parameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lelar/tables/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Basket.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Categories.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Clients.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Clients.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Details.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Products.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Basket.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Categories.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Clients.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Clients.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Details.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Products.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lelar/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/TablesManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lelar/TablesManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/services/BasketService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/services/CategoriesService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/services/ClientService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/services/DetailsSevice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/services/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/tables/Basket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lelar/tables/Basket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/tables/Categories.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/tables/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lelar/tables/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/tables/Details.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lelar/tables/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lelar/tables/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mystore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mystore/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,12 +116,7 @@
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="LELAR/Hibernate" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="mine: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="basket: table" type="69fad909:PgImplModel$LocalTable" />
+        <item name="roles" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
     </expand>
     <select />
@@ -130,57 +124,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Basket.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/TablesManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="261">
+              <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3032#3044#0" expanded="true" />
+                <element signature="e#3608#3615#0" expanded="true" />
+                <element signature="e#4165#4172#0" expanded="true" />
+                <element signature="e#4967#4968#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#562#563#0" expanded="true" />
+                <element signature="e#587#588#0" expanded="true" />
+                <element signature="e#621#622#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#958#966#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-              <folding>
-                <element signature="e#85#86#0" expanded="true" />
-                <element signature="e#129#130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/BasketService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#567#568#0" expanded="true" />
-                <element signature="e#616#617#0" expanded="true" />
-                <element signature="e#950#951#0" expanded="true" />
-                <element signature="e#976#977#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/TablesManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="391">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -204,13 +186,20 @@
     <findStrings>
       <find>Details</find>
       <find>Car</find>
-      <find>Categories</find>
       <find>Client</find>
+      <find>Categories</find>
+      <find>Parameters</find>
+      <find>Price</find>
     </findStrings>
     <replaceStrings>
       <replace>Details</replace>
       <replace>Clients</replace>
       <replace>Categories</replace>
+      <replace>Product</replace>
+      <replace>Basket</replace>
+      <replace>Parameters</replace>
+      <replace>Price</replace>
+      <replace>Order</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -231,7 +220,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/TableReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/Clients.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/Car.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Tables.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Clients.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Details.java" />
@@ -239,17 +227,28 @@
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/services/Services.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/services/DetailsSevice.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/services/ClientsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lelar/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Categories.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/services/CategoriesService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/CarService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lelar/TablesManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/services/ProductService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/services/BasketService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/services/ClientService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Table.java" />
+        <option value="2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/sequence/jpa_seq" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/ROw.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/BasketRow.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Basket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/services/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Categories.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/ParametersRow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Parameters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Price.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/TablesManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lelar/tables/Client.java" />
       </list>
     </option>
   </component>
@@ -270,10 +269,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1165" />
-    <option name="y" value="500" />
-    <option name="width" value="974" />
-    <option name="height" value="1087" />
+    <option name="x" value="1049" />
+    <option name="y" value="404" />
+    <option name="width" value="1310" />
+    <option name="height" value="971" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -283,7 +282,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -361,13 +359,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553776681644" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554057643488" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../mystore" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -378,18 +377,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lelar\Desktop\Java\dbwork\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lelar" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lelar\Desktop\Java\dbwork\src\main\java\com\lelar" />
       <recent name="C:\Users\Lelar\Desktop\Java\dbwork\src" />
       <recent name="C:\Users\Lelar\Desktop\Java\dbwork\src\main\webapp" />
       <recent name="C:\Users\Lelar\Desktop\Java\dbwork\src\main\resources\com.lelar" />
       <recent name="C:\Users\Lelar\Desktop\Java\dbwork\src\main\resources\WEB-INF\classes" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.lelar" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Lelar\Desktop\Java\dbwork\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -441,18 +440,19 @@
       <workItem from="1552849235789" duration="679000" />
       <workItem from="1552849948017" duration="2210000" />
       <workItem from="1552854229276" duration="5525000" />
-      <workItem from="1553563743790" duration="30150000" />
+      <workItem from="1553563743790" duration="48427000" />
+      <workItem from="1554025833973" duration="27297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46834000" />
+    <option name="totallyTimeSpent" value="92408000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="656" y="129" width="974" height="1087" extended-state="0" />
+    <frame x="1049" y="404" width="1310" height="971" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984375" visible="true" weight="0.032822758" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984375" visible="true" weight="0.1376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" sideWeight="0.5015625" side_tool="true" weight="0.3298969" />
@@ -463,32 +463,32 @@
       <window_info id="Learn" order="8" weight="0.32942432" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32914045" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.773523" visible="true" weight="0.28301886" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.17295597" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.7745203" visible="true" weight="0.09785203" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32914045" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32914045" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.22647703" side_tool="true" weight="0.16771488" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49200428" weight="0.32180294" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.22547974" side_tool="true" weight="0.2938733" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49200428" weight="0.31048805" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32914045" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32914045" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32914045" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24726477" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.4310722" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.42231947" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.31619257" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.14" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984375" visible="true" weight="0.032822758" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984375" visible="true" weight="0.25373134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" sideWeight="0.5015625" side_tool="true" weight="0.3298969" />
@@ -499,27 +499,27 @@
       <window_info id="Learn" order="8" weight="0.32942432" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32914045" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.773523" visible="true" weight="0.28301886" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.17295597" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.7745203" visible="true" weight="0.2024922" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32914045" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32914045" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.22647703" side_tool="true" weight="0.16771488" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49200428" weight="0.3219107" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.22547974" side_tool="true" weight="0.2938733" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49200428" weight="0.31048805" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32914045" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32914045" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32914045" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24726477" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.4310722" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.42231947" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info active="true" anchor="right" id="Database" order="6" visible="true" weight="0.1356674" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.23720682" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout-to-restore>
@@ -532,196 +532,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://87787baf-eca7-48d4-9e0c-9e8df8f24267/database/mine/schema/public/table/cars.sql" />
-    <entry file="das://87787baf-eca7-48d4-9e0c-9e8df8f24267/database/mine/schema/public/table/cars" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/persistence" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/2adfc519-fd1f-47f2-805a-bad2c267017f/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar!/javax/persistence/Persistence.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar!/javax/persistence/EntityManager.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.1.Final/hibernate-core-5.4.1.Final.jar!/org/hibernate/internal/SessionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="793" selection-start-line="793" selection-end-line="793" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/2adfc519-fd1f-47f2-805a-bad2c267017f.SCHEMA:mine.public">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>2adfc519-fd1f-47f2-805a-bad2c267017f.SCHEMA:mine.public</OriginalElement>
-          <nodes>
-            <node x="" y="">2adfc519-fd1f-47f2-805a-bad2c267017f.TABLE:mine.public.cars</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-780.5" y="4.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbwork.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Override.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="244" column="18" selection-start-line="244" selection-start-column="18" selection-end-line="244" selection-end-column="18" />
-          <folding>
-            <element signature="e#10225#10226#0" expanded="true" />
-            <element signature="e#10308#10309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/cars.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/Clients.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/Column.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Tables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="290" column="41" lean-forward="true" selection-start-line="290" selection-start-column="41" selection-end-line="290" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.0.3.RELEASE/spring-beans-5.0.3.RELEASE.jar!/org/springframework/beans/factory/BeanFactory.class">
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/cars" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/Car.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/CarService.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/OneToOne.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/Services.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.1.Final/hibernate-core-5.4.1.Final.jar!/org/hibernate/annotations/Table.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/clients/index/clients_pkey">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/EntityManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/CategoriesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Clients.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/DetailsSevice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Details.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/categories">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -732,35 +556,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/TableReader.java">
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/basket/index/basket_pkey">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-          <folding>
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1113#1114#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/GenerationType.class">
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/basket.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/Query.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="68" selection-start-line="9" selection-start-column="68" selection-end-line="9" selection-end-column="68" />
+        <state relative-caret-position="102">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -774,32 +580,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/cars">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/ProductService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/DetailsSevice.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/ClientService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/BasketService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/CategoriesService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Table.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/TableInt.java" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="264" column="12" selection-start-line="264" selection-start-column="12" selection-end-line="264" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/Car.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Basket.csv">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/CarService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/SequenceGenerator.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#640#641#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -810,70 +611,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/products">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Product.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/EntityManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="221">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/ProductService.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/ClientService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Products.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/sequence/jpa_seq">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Categories.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/clients">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Basket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="253">
+          <caret line="1217" column="18" selection-start-line="1217" selection-start-column="18" selection-end-line="1217" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -884,44 +649,244 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Client.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/CascadeType.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="68">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/BasketService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/ManyToOne.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        <state relative-caret-position="136">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.4.1.Final/hibernate-core-5.4.1.Final.jar!/org/hibernate/annotations/OnDeleteAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/OneToMany.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Categories.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/BasketRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#616#617#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/TablesManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/services/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="255">
+          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getId#0;class#Service#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Basket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/ParametersRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding>
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <element signature="e#85#86#0" expanded="true" />
-            <element signature="e#129#130#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/TableReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding>
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Parameters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#994#1004#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Price.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/TablesManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="126" column="44" selection-start-line="126" selection-start-column="44" selection-end-line="126" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3032#3044#0" expanded="true" />
+            <element signature="e#3608#3615#0" expanded="true" />
+            <element signature="e#4165#4172#0" expanded="true" />
+            <element signature="e#4967#4968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#958#966#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/categories">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/price">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/parameters">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/baskets">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/clients">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://2adfc519-fd1f-47f2-805a-bad2c267017f/database/mine/schema/public/table/orders">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lelar/tables/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
