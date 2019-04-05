@@ -2,7 +2,7 @@ package com.lelar.tables;
 
 import java.io.Serializable;
 
-public class BasketRow implements Serializable {
+public class BasketKey implements Serializable {
     private Client clientId;
     private Product productId;
 

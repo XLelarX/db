@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "baskets")
-@IdClass(BasketRow.class)
+@IdClass(BasketKey.class)
 
 public class Basket {
     @Id

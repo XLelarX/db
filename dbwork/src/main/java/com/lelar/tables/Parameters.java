@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "parameters")
-@IdClass(ParametersRow.class)
+@IdClass(ParametersKey.class)
 public class Parameters {
 
     @Id
